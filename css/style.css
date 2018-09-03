@@ -110,7 +110,7 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
+  height: 740px;
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -182,11 +182,96 @@
 .card-name {
   margin-top: 30px;
   font-size: 2.5em;
+  color: black;
 }
 .card-bracket {
   height: 200px;
   margin: 0;
   transform: rotate(270deg);
+}
+
+/* Serviços */
+
+.white-bg {
+  background-color: white !important ;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding: 20px 80px;
+}
+
+.services-title {
+  font-size: 4em;
+  color: black !important;
+}
+
+.services-description {
+  color: black !important;
+}
+
+.services-bracket {
+  height: 200px;
+  margin: 0 40px;
+}
+
+.services-image {
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 400px;
+  margin: 0 0 40px 0;
+  padding: 0;
+}
+
+.services-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+  color: black !important;
+  background-color: white;
+  padding: 40px 40px 0 40px;
+  margin-bottom: 40px;
+}
+
+.services-text h3 h4 h5 {
+  color: black !important;
+}
+
+h4 h5 {
+  color: black !important;
+}
+
+.clipping {
+  color: white !important;
+  background-color: black !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.clipping-title {
+  font-size: 3em;
+  color: white !important;
+}
+
+.clipping-description {
+  color: white !important;
+}
+
+.clipping-bracket {
+  height: 160px;
+  margin: 0 40px;
 }
 
 @media (max-width: 992px) {
@@ -211,5 +296,12 @@
     height: 200px;
   }
 
+  .services {
+    flex-direction: column;
+  }
+
+  .services-bracket {
+    transform: rotate(270deg);
+  }
 
 }
